@@ -1,32 +1,47 @@
 {
+  "displayName": "Halal-matchMaking",
   "expo": {
-    "name": "tinder-expo",
-    "slug": "tinder-expo",
-    "version": "1.0.0",
+    "name": "Halal-matchMaking",
+    "description": "A Halal match-making application",
+    "scheme": "Halal-matchMaking",
+    "slug": "Halal-matchMaking",
+    "icon": "./src/assets/images/icon.png",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "platforms": ["ios", "android"],
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#070F26",
+      "translucent": true
+    },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/images/splash@3x.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#070F26",
+      "mdpi": "./src/assets/images/splash.png",
+      "xhdpi": "./src/assets/images/splash@2x.png",
+      "xxhdpi": "./src/assets/images/splash@3x.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#111D40"
+      },
+      "package": "br.com.Halal-matchMaking"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
     }
   }
 }
